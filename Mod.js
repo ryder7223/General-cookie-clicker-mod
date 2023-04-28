@@ -143,13 +143,7 @@ var Crustulum = {
         'miracleSpells': false,
         'allGodsActive': false,
         'allGodsSlotOne': false,
-    },
-    Config: {}, // User settings
-    Init: () => { // Initialize the add-on.
-        if (!Game || !Game.version || !Game.updateLog) {
-            alert('The game isn\'t loaded yet or this isn\'t the game.');
-            return;
-        }
+        },
         Crustulum.Hijack.Game();
         Crustulum.loadConfig();
         Crustulum.initTicks();
